@@ -12,8 +12,8 @@
   <remote name="rust" fetch="https://github.com/meta-rust"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="nxp" fetch="https://source.codeaurora.org/external"/>
-  <remote name="dnind" fetch="ssh://git@bitbucket.sw.nxp.com/dnind" />
-  <remote name="cpan" fetch="https://github.com/rehsack" />
+  <remote name="rt-edge" fetch="https://github.com/rt-edge-sw"/>
+  <remote name="cpan" fetch="https://github.com/rehsack"/>
   <default sync-j="2"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="9d7b7caeba7ebd6c315bf99950e4501662ddeb80">
@@ -40,7 +40,7 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="74e0b8d2acc6b9bbc0345a500a700932d70772f4"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="5c2417905c9df08d6b0a6433539c5e32622890f0" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="2f6ecfa8abd517422f7a04004709855637586789" />
-  <project name="meta-rt-edge" path="sources/meta-rt-edge" remote="dnind" revision="4433a30ab208340d974fedd1536ddec11f843c3d">
+  <project name="meta-rt-edge" path="sources/meta-rt-edge" remote="rt-edge" revision="e8f850a6b2367bda97484927a856e537908e901b">
     <linkfile src="tools/rt-edge-setup-env.sh" dest="rt-edge-setup-env.sh"/>
   </project>
 </manifest>
