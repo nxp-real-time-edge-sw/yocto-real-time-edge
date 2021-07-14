@@ -12,7 +12,7 @@
   <remote name="rust" fetch="https://github.com/meta-rust"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="nxp" fetch="https://source.codeaurora.org/external"/>
-  <remote name="rt-edge" fetch="https://github.com/rt-edge-sw"/>
+  <remote name="real-time-edge" fetch="https://github.com/real-time-edge-sw"/>
   <remote name="cpan" fetch="https://github.com/rehsack"/>
   <default sync-j="2"/>
 
@@ -40,7 +40,7 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="74e0b8d2acc6b9bbc0345a500a700932d70772f4"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="5c2417905c9df08d6b0a6433539c5e32622890f0" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="2f6ecfa8abd517422f7a04004709855637586789" />
-  <project name="meta-rt-edge" path="sources/meta-rt-edge" remote="rt-edge" revision="e8f850a6b2367bda97484927a856e537908e901b">
-    <linkfile src="tools/rt-edge-setup-env.sh" dest="rt-edge-setup-env.sh"/>
+  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="a89b898b70744ae60101ec98a715e6b79b3928c0">
+    <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
 </manifest>

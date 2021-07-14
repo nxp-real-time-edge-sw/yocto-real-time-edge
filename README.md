@@ -16,9 +16,9 @@ $ export PATH=${PATH}:~/bin
 ## Download the latest Real-time Edge Environment
 
 ```
-$ mkdir yocto-rt-edge
-$ cd yocto-rt-edge
-$ repo init -u https://github.com/rt-edge-sw/yocto-rt-edge.git -m default.xml
+$ mkdir yocto-real-time-edge
+$ cd yocto-real-time-edge
+$ repo init -u https://github.com/real-time-edge-sw/yocto-real-time-edge.git -m default.xml
 
 $ repo sync
 ```
@@ -34,15 +34,15 @@ Please refer to detailed README under the release branch.
 To download the Real-time Edge 2.0 release
 
 ```
-$ mkdir yocto-rt-edge
-$ cd yocto-rt-edge
-$ repo init -u https://github.com/rt-edge-sw/yocto-rt-edge.git -b rt-edge-gatesgarth -m rt-edge-2.0.0.xml
+$ mkdir yocto-real-time-edge
+$ cd yocto-real-time-edge
+$ repo init -u https://github.com/real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-gatesgarth -m real-time-edge-2.0.0.xml
 ```
 
 ## Setup build project
 
 ```
-$ MACHINE=<Machine> DISTRO=<Distro> source ./rt-edge-setup-env.sh -b bld-<Name>
+$ MACHINE=<Machine> DISTRO=<Distro> source ./real-time-edge-setup-env.sh -b bld-<Name>
 ```
 
 Machine:
@@ -61,8 +61,8 @@ Machine:
 - lx2160ardb-rev2
 
 Distro:
-- nxp-rt-edge – The regular image including Real-time Networking, Real-time System, and Industrial packages.
-- nxp-rt-edge-baremetal – The baremetal image(some boards do not support this distro).
+- nxp-real-time-edge – The regular image including Real-time Networking, Real-time System, and Industrial packages.
+- nxp-real-time-edge-baremetal – The baremetal image(some boards do not support this distro).
 
 Name:
 - identical string for the build project
@@ -70,11 +70,11 @@ Name:
 ### Examples
 
 ```
-$ DISTRO=nxp-rt-edge-baremetal MACHINE=imx8mpevk source rt-edge-setup-env.sh -b build-imx8mpevk-baremetal
+$ DISTRO=nxp-real-time-edge-baremetal MACHINE=imx8mpevk source real-time-edge-setup-env.sh -b build-imx8mpevk-baremetal
 ```
 
 ```
-$ DISTRO=nxp-rt-edge MACHINE=imx8mpevk source rt-edge-setup-env.sh -b build-imx8mpevk-rt-edge
+$ DISTRO=nxp-real-time-edge MACHINE=imx8mpevk source real-time-edge-setup-env.sh -b build-imx8mpevk-real-time-edge
 ```
 
 ## Build an image
@@ -84,10 +84,10 @@ $ bitbake <Image>
 ```
 
 Image:
-- nxp-image-rt-edge: demo image for all supported machines.
+- nxp-image-real-time-edge: demo image for all supported machines.
 
 ### Examples
 
 ```
-$ bitbake nxp-image-rt-edge
+$ bitbake nxp-image-real-time-edge
 ```
