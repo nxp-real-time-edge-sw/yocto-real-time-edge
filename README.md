@@ -36,7 +36,7 @@ To download the Real-time Edge 2.0 release
 ```
 $ mkdir yocto-real-time-edge
 $ cd yocto-real-time-edge
-$ repo init -u https://github.com/real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-gatesgarth -m real-time-edge-2.0.0.xml
+$ repo init -u https://github.com/real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-hardknott -m default.xml
 ```
 
 ## Setup build project
