@@ -37,8 +37,8 @@
   <project name="meta-cloud-services" path="sources/meta-cloud-services" remote="yocto" revision="eb1ad5403e7572abfe21c62616e78c66e3da7131"/>
   <project name="meta-security" path="sources/meta-security" remote="yocto" revision="ca9264b1e1b5a8b84bf95f5a4eb93f2947b3b75c"/>
   <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="5753d1522526ce5e9ef8df138e151aa9248016ac"/>
-  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="1f9a36fa1a54c8daeb697bf50277f79b3196a5a4"/>
-  <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="11f91e4a6840428fb3d2fd987e409eb02b07eb96" />
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="679a22e1307c490ac357a48eb820ad34af05e724"/>
+  <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="44017d44eb8e5e649be683fcf6292ecb577331fc" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="2f6ecfa8abd517422f7a04004709855637586789" />
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="4a0ce49f50885b79c5d1e393d8e22b99b549aeb0">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
