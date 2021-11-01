@@ -40,7 +40,7 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="679a22e1307c490ac357a48eb820ad34af05e724"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="44017d44eb8e5e649be683fcf6292ecb577331fc" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="2f6ecfa8abd517422f7a04004709855637586789" />
-  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="aa7fb42d775225d947291a2ae6ac6f9bdcf47c11">
+  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="572b65c6e04c1476cecb26ecdfe8d897f7a8d455">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
 </manifest>
