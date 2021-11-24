@@ -12,7 +12,7 @@
   <remote name="rust" fetch="https://github.com/meta-rust"/>
   <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="nxp" fetch="https://source.codeaurora.org/external"/>
-  <remote name="real-time-edge" fetch="ssh://git@bitbucket.sw.nxp.com/dnind"/>
+  <remote name="real-time-edge" fetch="https://github.com/real-time-edge-sw"/>
   <remote name="cpan" fetch="https://github.com/rehsack"/>
   <default sync-j="2"/>
 
