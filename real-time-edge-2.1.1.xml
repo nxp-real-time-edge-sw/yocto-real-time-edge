@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="real-time-edge-2.1.0.xml"/>
+
+  <remote name="nxpmicro" fetch="https://github.com/NXPmicro"/>
+
+  <project remote="nxpmicro" revision="4c7fc94884f1c6c2a178ba3a0ffb7e739373b8ab" name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" >
+    <linkfile src="tools/harpoon-real-time-edge-setup-env.sh" dest="harpoon-real-time-edge-setup-env.sh" />
+  </project>
+
+</manifest>
