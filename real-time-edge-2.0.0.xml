@@ -39,7 +39,7 @@
   <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="be95d6f88c68df94db44a2129de5a7a3a0b9c7d9"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="74e0b8d2acc6b9bbc0345a500a700932d70772f4"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="5c2417905c9df08d6b0a6433539c5e32622890f0" />
-  <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="2f6ecfa8abd517422f7a04004709855637586789" />
+  <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="a9fc22b1dce08343e19be06a48f0ce503a034c56" />
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="4a0ce49f50885b79c5d1e393d8e22b99b549aeb0">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
