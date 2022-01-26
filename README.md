@@ -1,16 +1,25 @@
-# Real-time Edge Software Manifest README
+# Real-time Edge Software Manifest
 
 ## Install the `repo` utility (only need to do this once)
 
-To get the Real-time Edge environment you need to have `repo` installed.
+To get the Real-time Edge environment you need to have `repo` installed (see [link](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md#install) or instructions below).  
+This `repo` package is used to download manifests for Real-time Edge releases.  
+This can be installed with your package manager or manually.
 
-This 'repo' is used to download manifests for Real-time Edge releases.
-
+### Install Repo with Package Manager
 ```
-$ mkdir ~/bin
-$ curl https://storage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
-$ chmod a+x ~/bin/repo
-$ export PATH=${PATH}:~/bin
+# Debian/Ubuntu.
+$ sudo apt-get install repo
+
+# Gentoo.
+$ sudo emerge dev-vcs/repo
+```
+### Install Repo manually
+```
+$ mkdir -p ~/.bin
+$ PATH="${HOME}/.bin:${PATH}"
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+$ chmod a+rx ~/.bin/repo
 ```
 
 ## Download the latest Real-time Edge Environment
