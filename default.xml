@@ -13,7 +13,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="nxp" fetch="https://source.codeaurora.org/external"/>
   <remote name="real-time-edge" fetch="ssh://git@bitbucket.sw.nxp.com/dnind"/>
-  <remote name="harpoon" fetch="ssh://git@bitbucket.sw.nxp.com/hrpn"/>
+  <remote name="harpoon" fetch="https://github.com/NXPmicro/"/>
   <remote name="cpan" fetch="https://github.com/rehsack"/>
   <default sync-j="2"/>
 
@@ -45,5 +45,5 @@
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="e3bf2594d52cefee30ebfda84e74b2a7ae3a9906">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
-  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="harpoon" revision="b1e182893d750cd045180c6a774dc62659c4c3ec" />
+  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="harpoon" revision="f30849b082d74087691eab6a757c3c423f9db75d" />
 </manifest>
