@@ -31,7 +31,7 @@ Please refer to detailed README under the release branch.
 
 ### Examples
 
-To download the Real-time Edge 2.0 release
+To download the Real-time Edge 2.2 release
 
 ```
 $ mkdir yocto-real-time-edge
@@ -47,8 +47,8 @@ $ MACHINE=<Machine> DISTRO=<Distro> source ./real-time-edge-setup-env.sh -b bld-
 
 Machine:
 - imx6ull14x14evk
-- imx8mmevk
-- imx8mpevk
+- imx8mm-lpddr4-evk
+- imx8mp-lpddr4-evk
 - ls1028ardb
 - ls1012ardb
 - ls1021atwr
@@ -62,7 +62,7 @@ Machine:
 
 Distro:
 - nxp-real-time-edge – The regular image including Real-time Networking, Real-time System, and Industrial packages.
-- nxp-real-time-edge-baremetal – The baremetal image(some boards do not support this distro).
+- nxp-real-time-edge-baremetal – The baremetal image (some boards do not support this distro).
 
 Name:
 - identical string for the build project
@@ -70,11 +70,11 @@ Name:
 ### Examples
 
 ```
-$ DISTRO=nxp-real-time-edge-baremetal MACHINE=imx8mpevk source real-time-edge-setup-env.sh -b build-imx8mpevk-baremetal
+$ DISTRO=nxp-real-time-edge-baremetal MACHINE=imx8mp-lpddr4-evk source real-time-edge-setup-env.sh -b build-imx8mpevk-baremetal
 ```
 
 ```
-$ DISTRO=nxp-real-time-edge MACHINE=imx8mpevk source real-time-edge-setup-env.sh -b build-imx8mpevk-real-time-edge
+$ DISTRO=nxp-real-time-edge MACHINE=imx8mp-lpddr4-evk source real-time-edge-setup-env.sh -b build-imx8mpevk-real-time-edge
 ```
 
 ## Build an image
