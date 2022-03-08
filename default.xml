@@ -41,7 +41,7 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="7f719ef40896b6c78893add8485fda995b00d51d"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="09a202300cea31df2bdb09f02b1b1f2fccfd5b2f" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="a9fc22b1dce08343e19be06a48f0ce503a034c56" />
-  <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="real-time-edge" revision="e69204299de126835abd292397924bf478159039" />
+  <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="real-time-edge" revision="88738fd88797c5317e4bbbfa18f1671371cdc6f7" />
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="5924a0b576765c34bf0fc6b456f5ec0bc404024b">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
