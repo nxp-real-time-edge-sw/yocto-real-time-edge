@@ -42,7 +42,7 @@
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="09a202300cea31df2bdb09f02b1b1f2fccfd5b2f" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="a9fc22b1dce08343e19be06a48f0ce503a034c56" />
   <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="real-time-edge" revision="88738fd88797c5317e4bbbfa18f1671371cdc6f7" />
-  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="5924a0b576765c34bf0fc6b456f5ec0bc404024b">
+  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="948326dc0ce06d37589e1f44aa13b359dfe4b3d6">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
   <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="harpoon" revision="f30849b082d74087691eab6a757c3c423f9db75d" />
