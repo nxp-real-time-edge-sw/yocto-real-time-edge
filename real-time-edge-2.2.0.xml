@@ -13,7 +13,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
   <remote name="nxp" fetch="https://source.codeaurora.org/external"/>
   <remote name="real-time-edge" fetch="https://github.com/real-time-edge-sw"/>
-  <remote name="harpoon" fetch="https://github.com/NXPmicro/"/>
+  <remote name="NXPmicro" fetch="https://github.com/NXPmicro"/>
   <remote name="cpan" fetch="https://github.com/rehsack"/>
   <default sync-j="2"/>
 
@@ -41,9 +41,9 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="7f719ef40896b6c78893add8485fda995b00d51d"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="nxp" revision="09a202300cea31df2bdb09f02b1b1f2fccfd5b2f" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="a9fc22b1dce08343e19be06a48f0ce503a034c56" />
-  <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="real-time-edge" revision="0479295e86cdeefa119e95325610fdd1e846299d" />
+  <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="NXPmicro" revision="3da107cc3eff7556cfd07bf44f7981b9b1672a01" />
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="9ffb69e72d72401cca9734dd69424f8f118e7b67">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
-  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="harpoon" revision="f30849b082d74087691eab6a757c3c423f9db75d" />
+  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="NXPmicro" revision="f30849b082d74087691eab6a757c3c423f9db75d" />
 </manifest>
