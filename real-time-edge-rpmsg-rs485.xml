@@ -41,8 +41,8 @@
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="ed52ba982179087ecc84f7dc3b0a16cfe25f2f8e" upstream="honister"/>
   <project name="qoriq/qoriq-components/meta-qoriq" path="sources/meta-qoriq" remote="CAF" revision="8ec8a191e5eb3444a61399a54e4370937b5bb944" upstream="honister" />
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="3d82a95da95395c20ae13a89dd7de0cebcc27bfa" />
-  <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="NXPmicro" revision="146a2e10008ca0c2025a339a3766a3d09c0a44e4"/>
-  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="f1fd2ab1b13177580c6c8770413911a63a027732">
+  <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="NXPmicro" revision="d12ef06f6e6c33d12cb24331cc3020c0d342b088"/>
+  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="432a4e9a885f2d15efdd4a90fd8f0cf14c2592dd">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
   <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="NXPmicro" revision="77277168bd43783dfb9dcecf39fe85eab11d5b1a" />
