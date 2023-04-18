@@ -38,7 +38,7 @@
   <project name="meta-cloud-services" path="sources/meta-cloud-services" remote="yocto" revision="12efde8056a004e8d3a337edb2728d05edbc383b" upstream="kirkstone"/>
   <project name="meta-security" path="sources/meta-security" remote="yocto" revision="c79262a30bd385f5dbb009ef8704a1a01644528e" upstream="kirkstone"/>
   <project name="meta-selinux" path="sources/meta-selinux" remote="yocto" revision="a401f4b2816a0b41ce8d9351542658c721935bcd" upstream="kirkstone"/>
-  <project name="meta-qoriq" path="sources/meta-qoriq" remote="nxp-qoriq" revision="ffa1255ebdfe5ca5c27488e49eb90a1a0fc0d7a5" upstream="kirkstone"/>
+  <project name="meta-qoriq" path="sources/meta-qoriq" remote="nxp-qoriq" revision="afaef5e29b0d5cb8a0f59c62bf9cbd44140b041e" upstream="kirkstone"/>
 
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="3d82a95da95395c20ae13a89dd7de0cebcc27bfa"/>
   <project name="meta-rtos-industrial" path="sources/meta-rtos-industrial" remote="real-time-edge" revision="6d631c518b25d69e448e7d1ac09db349c11b691b" upstream="kirkstone"/>
