@@ -45,6 +45,6 @@
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="c50b00423bc3e6fe6a8e39e15b032041544454e7" upstream="kirkstone">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
-  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="nxp" revision="811000d1289c45f57ab321426c92c882a6d7ffbe"/>
+  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="nxp" revision="297802c7939a59a06881a3c9b1ec9740e18f4b06"/>
   <project name="meta-nxp-avb" path="sources/meta-nxp-avb" remote="nxp" revision="99250391a345821b3f55497c68b15d6cd974a19a"/>
 </manifest>
