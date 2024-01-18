@@ -28,13 +28,12 @@ $ repo sync
 
 ### Examples
 
-To download the Real-time Edge 2.7 release
+To download the Real-time Edge 2.5 release
 
 ```
 $ mkdir yocto-real-time-edge
 $ cd yocto-real-time-edge
-$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-mickledore -m real-time-edge-2.7.0.xml
-$ repo sync
+$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b la93xx -m rte_la93xx_release.xml
 ```
 
 ## Setup build project
@@ -49,7 +48,6 @@ Machine:
 - imx8mm-lpddr4-evk
 - imx8mp-lpddr4-evk
 - imx93evk
-- imx93-9x9-lpddr4-qsb
 - ls1028ardb
 - ls1043ardb
 - ls1046afrwy
@@ -59,8 +57,6 @@ Machine:
 Distro:
 - nxp-real-time-edge – The regular image including Real-time Networking, Real-time System, and Industrial packages.
 - nxp-real-time-edge-baremetal – The baremetal image (some boards do not support this distro).
-- nxp-real-time-edge-emmc – The emmc boot image (some boards do not support this distro).
-- nxp-real-time-edge-plc – The PLC image (some boards do not support this distro).
 
 Name:
 - identical string for the build project
@@ -83,7 +79,6 @@ $ bitbake <Image>
 
 Image:
 - nxp-image-real-time-edge: demo image for all supported machines.
-- nxp-image-real-time-edge-plc: The macro image to support PLC.
 
 ### Examples
 
