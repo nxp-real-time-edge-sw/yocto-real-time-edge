@@ -28,12 +28,12 @@ $ repo sync
 
 ### Examples
 
-To download the Real-time Edge 2.7 release
+To download the Real-time Edge 2.8 release
 
 ```
 $ mkdir yocto-real-time-edge
 $ cd yocto-real-time-edge
-$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-mickledore -m real-time-edge-2.7.0.xml
+$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-mickledore -m real-time-edge-2.8.0.xml
 $ repo sync
 ```
 
@@ -50,6 +50,7 @@ Machine:
 - imx8mp-lpddr4-evk
 - imx93evk
 - imx93-9x9-lpddr4-qsb
+- imx93-14x14-lpddr4x-evk
 - ls1028ardb
 - ls1043ardb
 - ls1046afrwy
