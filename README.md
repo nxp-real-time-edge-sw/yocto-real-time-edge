@@ -127,9 +127,9 @@ insmod /lib/modules/5.15.71-rt51+g8d6bc216a295/extra/la9310shiva.ko scratch_buf_
 | Component      | Github Location                              | Branch                |
 |----------------|----------------------------------------------|-----------------------|
 | Linux          | git://github.com/nxp-qoriq/linux.git         |`la12xx-linux-5.15-rt` |
-| LA9310_HOST    | git://github.com/nxp-qoriq/la93xx_host_sw    |`la12xx`               |
-| LA9310_FRTOS   | git://github.com/nxp-qoriq/la93xx_freertos   |`la12xx`               |
-| LA9310_FW      | git://github.com/nxp-qoriq/la93xx_firmware   |`la12xx`               |
+| LA9310_HOST    | git://github.com/nxp-qoriq/la93xx_host_sw    |`main`                 |
+| LA9310_FRTOS   | git://github.com/nxp-qoriq/la93xx_freertos   |`main`                 |
+| LA9310_FW      | git://github.com/nxp-qoriq/la93xx_firmware   |`main`                 |
 
 
 ### How To Build Linux
