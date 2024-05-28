@@ -41,4 +41,5 @@
   <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="nxp-local" revision="la93xx">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
+  <project name="meta-nxp-sdr" path="sources/meta-nxp-sdr" remote="nxp-local" revision="main"/>
 </manifest>
