@@ -52,6 +52,6 @@
    <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
     <linkfile src="tools/setup-environment" dest="setup-environment"/>
   </project>
-  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="nxp" revision="65922147c42f8c71fbdbc81c2ed3f66a7abcdeb9"/>
+  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="nxp" revision="433d731326f75887db8f0febbb2526c5b3e16424"/>
   <project name="meta-nxp-avb" path="sources/meta-nxp-avb" remote="nxp" revision="26cbf1ef3ddebaeb76399dea497e6c2d31a90de1"/>
 </manifest>
