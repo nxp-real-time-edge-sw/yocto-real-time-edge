@@ -49,6 +49,7 @@ $ MACHINE=<Machine> DISTRO=<Distro> source ./real-time-edge-setup-env.sh -b bld-
 
 Machine:
 - imx8mp-rfnm
+- imx8mp-seeve
 - imx8dxlb0-lpddr4-evk
 - imx8mm-lpddr4-evk
 - imx8mp-lpddr4-evk
@@ -138,7 +139,7 @@ insmod /lib/modules/5.15.71-rt51+g8d6bc216a295/extra/la9310shiva.ko scratch_buf_
 ```
 export CROSS_COMPILE=<compiler-path>aarch64-linux-gnu-
 export ARCH=arm64
-make imx8mp_rfnm_defconfig
+make imx8mp_rfnm_defconfig  (OR, imx8mp_seeve_defconfig)
 make -j 8
 ```
  
@@ -153,6 +154,10 @@ export LA9310_COMMON_HEADERS=<repository-path>/la931x_freertos/common_headers
 cd ~/la931x_freertos/Demo/CORTEX_M4_NXP_LA9310_GCC/
 ./clean.sh
 ./build_release.sh -m pcie -t rfnm -b Release
+
+or,
+
+./build_release.sh -m pcie -t seeve -b Release
 ```
  
 
@@ -164,6 +169,6 @@ export ARCH=arm64
 export KERNEL_DIR=<kernel-path>/imx8mp-kernel    
 export LA9310_COMMON_HEADERS=<repository-path>/la931x_freertos/common_headers
 make clean
-make
+make IMX_RFNM=1  (or IMX_SEEVE=1)
 make install
 ```
