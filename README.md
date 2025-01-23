@@ -2,7 +2,8 @@
 
 This repo is used to download manifests for Real-time Edge Software releases.
 
-Specific instructions will reside in READMEs in each branch.
+Minor release v3.0.1 is addressing security vulnerability.
+You may contact NXP for further information.
 
 ## Install the `repo` utility (only need to do this once)
 
@@ -28,12 +29,12 @@ $ repo sync
 
 ### Examples
 
-To download the Real-time Edge 3.0 release
+To download the Real-time Edge 3.0.1 release
 
 ```
 $ mkdir yocto-real-time-edge
 $ cd yocto-real-time-edge
-$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-scarthgap -m real-time-edge-3.0.0.xml
+$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-scarthgap -m real-time-edge-3.0.1.xml
 $ repo sync
 ```
 
