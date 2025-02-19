@@ -37,7 +37,7 @@
   <project name="meta-qoriq" path="sources/meta-qoriq" remote="nxp-qoriq" revision="afaef5e29b0d5cb8a0f59c62bf9cbd44140b041e" upstream="kirkstone"/>
 
   <project name="meta-cpan" path="sources/meta-cpan" remote="cpan" revision="3d82a95da95395c20ae13a89dd7de0cebcc27bfa"/>
-  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="12a35b1f418a50ead970fda282757f4afd2a8551" upstream="la93xx">
+  <project name="meta-real-time-edge" path="sources/meta-real-time-edge" remote="real-time-edge" revision="213c66e51403c3b4f7c72569f5c09ebfdf3743dc" upstream="la93xx">
     <linkfile src="tools/real-time-edge-setup-env.sh" dest="real-time-edge-setup-env.sh"/>
   </project>
 </manifest>

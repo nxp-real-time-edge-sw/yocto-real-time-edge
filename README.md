@@ -48,7 +48,7 @@ $ MACHINE=<Machine> DISTRO=<Distro> source ./real-time-edge-setup-env.sh -b bld-
 ```
 
 Machine:
-- imx8mp-rfnm
+- imx8mp-sdr
 - imx8mp-seeve
 - imx8dxlb0-lpddr4-evk
 - imx8mm-lpddr4-evk
@@ -64,7 +64,7 @@ Name:
 
 
 ```
-$ DISTRO=nxp-real-time-edge MACHINE=imx8mp-rfnm source real-time-edge-setup-env.sh -b build-imx8mprfnm
+$ DISTRO=nxp-real-time-edge MACHINE=imx8mp-sdr source real-time-edge-setup-env.sh -b build-imx8mpsdr
 ```
 
 ## Build an image
@@ -96,9 +96,9 @@ bitbake -c do_compile -f userapp-la9310
 
 Below is the generated images location:
 ```
-build-imx8mprfnm/tmp/deploy/images/imx8mp-rfnm$ ls -a *.wic*
- nxp-image-real-time-edge-imx8mp-rfnm-20240202081724.rootfs.wic.zst
- nxp-image-real-time-edge-imx8mp-rfnm.wic.zst -> nxp-image-real-time-edge-imx8mp-rfnm-20240202081724.rootfs.wic.zst
+build-imx8mpsdr/tmp/deploy/images/imx8mp-sdr$ ls -a *.wic*
+ nxp-image-real-time-edge-imx8mp-sdr-20240202081724.rootfs.wic.zst
+ nxp-image-real-time-edge-imx8mp-sdr.wic.zst -> nxp-image-real-time-edge-imx8mp-sdr-20240202081724.rootfs.wic.zst
 ```
 
 ## Unzip Image and Flash in SD Card 
@@ -106,7 +106,7 @@ build-imx8mprfnm/tmp/deploy/images/imx8mp-rfnm$ ls -a *.wic*
 > (Make Sure correct device is being used w.r.t SD card e.g. /dev/sdX)
 ```
 zstd -d *wic.zst
-sudo dd if=nxp-image-real-time-edge-imx8mp-rfnm-20240202081724.rootfs.wic of=/dev/sdX bs=8M oflag=direct status=progress
+sudo dd if=nxp-image-real-time-edge-imx8mp-sdr-20240202081724.rootfs.wic of=/dev/sdX bs=8M oflag=direct status=progress
 ```
  
 ## How To Load Shiva Kernel Module at Linux Prompt
@@ -131,15 +131,14 @@ insmod /lib/modules/5.15.71-rt51+g8d6bc216a295/extra/la9310shiva.ko scratch_buf_
 | LA9310_HOST    | git://github.com/nxp-qoriq/la93xx_host_sw    |`main`                 |
 | LA9310_FRTOS   | git://github.com/nxp-qoriq/la93xx_freertos   |`main`                 |
 | LA9310_FW      | git://github.com/nxp-qoriq/la93xx_firmware   |`main`                 |
+| U-BOOT         | git://github.com/nxp-qoriq/u-boot            |`imx8mp-la9310-v2022.04-2.5.0`|
 
 
 ### How To Build Linux
-> *Note*: RFNM kernel patches are not available in git://github.com/nxp-qoriq/linux.git branch: la12xx-linux-5.15-rt
-	Please apply  kernel support patches manually to this tree: (https://github.com/nxp-real-time-edge-sw/meta-real-time-edge/tree/la93xx/dynamic-layers/imx-layer/recipes-kernel/linux/linux-imx)
 ```
 export CROSS_COMPILE=<compiler-path>aarch64-linux-gnu-
 export ARCH=arm64
-make imx8mp_rfnm_defconfig  (OR, imx8mp_seeve_defconfig)
+make imx8mp_sdr_defconfig  (OR, imx8mp_seeve_defconfig)
 make -j 8
 ```
  
@@ -153,7 +152,7 @@ export ARMGCC_DIR=<toolchain-path>/gcc-arm-none-eabi-6-2017-q2-update/
 export LA9310_COMMON_HEADERS=<repository-path>/la931x_freertos/common_headers
 cd ~/la931x_freertos/Demo/CORTEX_M4_NXP_LA9310_GCC/
 ./clean.sh
-./build_release.sh -m pcie -t rfnm -b Release
+./build_release.sh -m pcie -t sdr -b Release
 
 or,
 
@@ -169,6 +168,6 @@ export ARCH=arm64
 export KERNEL_DIR=<kernel-path>/imx8mp-kernel    
 export LA9310_COMMON_HEADERS=<repository-path>/la931x_freertos/common_headers
 make clean
-make IMX_RFNM=1  (or IMX_SEEVE=1)
+make IMX_SDR=1  (or IMX_SEEVE=1)
 make install
 ```
