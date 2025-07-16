@@ -28,12 +28,12 @@ $ repo sync
 
 ### Examples
 
-To download the Real-time Edge 2.6 release
+To download the Real-time Edge 3.2 release
 
 ```
 $ mkdir yocto-real-time-edge
 $ cd yocto-real-time-edge
-$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-mickledore -m real-time-edge-2.6.0.xml
+$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-walnascar -m real-time-edge-3.2.0.xml
 $ repo sync
 ```
 
@@ -48,11 +48,17 @@ Machine:
 - imx8dxlb0-lpddr4-evk
 - imx8mm-lpddr4-evk
 - imx8mp-lpddr4-evk
+- imx91-11x11-lpddr4-evk
+- imx91-9x9-lpddr4-qsb
 - imx93evk
 - imx93-9x9-lpddr4-qsb
+- imx93-14x14-lpddr4x-evk
+- imx943-19x19-lpddr4-evk
+- imx943-19x19-lpddr5-evk
+- imx95-19x19-lpddr5-evk
+- imx95-15x15-lpddr4x-evk
 - ls1028ardb
 - ls1043ardb
-- ls1046afrwy
 - ls1046ardb
 - lx2160ardb-rev2
 
@@ -66,10 +72,6 @@ Name:
 - identical string for the build project
 
 ### Examples
-
-```
-$ DISTRO=nxp-real-time-edge-baremetal MACHINE=imx8mp-lpddr4-evk source real-time-edge-setup-env.sh -b build-imx8mpevk-baremetal
-```
 
 ```
 $ DISTRO=nxp-real-time-edge MACHINE=imx8mp-lpddr4-evk source real-time-edge-setup-env.sh -b build-imx8mpevk-real-time-edge
