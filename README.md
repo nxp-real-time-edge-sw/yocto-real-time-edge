@@ -28,12 +28,12 @@ $ repo sync
 
 ### Examples
 
-To download the Real-time Edge 3.2 release
+To download the Real-time Edge 3.3 release
 
 ```
 $ mkdir yocto-real-time-edge
 $ cd yocto-real-time-edge
-$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-walnascar -m real-time-edge-3.2.0.xml
+$ repo init -u https://github.com/nxp-real-time-edge-sw/yocto-real-time-edge.git -b real-time-edge-walnascar -m real-time-edge-3.3.0.xml
 $ repo sync
 ```
 
@@ -48,13 +48,18 @@ Machine:
 - imx8dxlb0-lpddr4-evk
 - imx8mm-lpddr4-evk
 - imx8mp-lpddr4-evk
+- imx8mp-lpddr4-frdm
 - imx91-11x11-lpddr4-evk
+- imx91-11x11-lpddr4-frdm
+- imx91-11x11-lpddr4-frdm-imx91s
 - imx91-9x9-lpddr4-qsb
 - imx93evk
 - imx93-9x9-lpddr4-qsb
+- imx93-11x11-lpddr4x-frdm
 - imx93-14x14-lpddr4x-evk
 - imx943-19x19-lpddr4-evk
 - imx943-19x19-lpddr5-evk
+- imx943-15x15-lpddr4-evk
 - imx95-19x19-lpddr5-evk
 - imx95-15x15-lpddr4x-evk
 - ls1028ardb
